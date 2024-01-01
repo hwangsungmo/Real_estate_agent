@@ -9,7 +9,7 @@
         #videoList {
             overflow-y: auto;
             max-height: 240px;
-            width: 320px;
+            width: 480px;
             /* Match the video width */
             list-style-type: none;
             padding: 0;
@@ -46,14 +46,59 @@
 
         .title_bold {
             font-weight: bold;
-            color: blue;
+            width: auto;
+            background-color: black;
+            color: white;
             font-size: 15px;
             /* Adjust the font size as needed */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            padding-left: 10px;
         }
+
+        .title_bold1 {
+            font-weight: bold;
+            /*text-align: center;*/
+            width: 480px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            /* Adjust the font size as needed */
+            margin-top: 20px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-left: 10px;
+        }
+
+        #mainVideo {
+            width: 320px;
+            height: 240px;
+        }
+
+        @media only screen and (min-width: 641px) {
+            /* For screens wider than 640px (PC) */
+            #videoList {
+                max-height: 300px;
+                width: 480px;
+            }
+
+            #mainVideo {
+                width: 480px;
+                height: 300px;
+            }
+
+            .title_bold1 {
+                width: 480px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
+
+    <div class="title_bold1"> 공인중개사 민법/민사특별법 핵심이론(2024) </div>
 
     <video id="mainVideo" width="320" height="240" controls autoplay>
         <source src="http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_01_pki_231023_sd.mp4? + repeatedPart" type="video/mp4">
@@ -65,28 +110,28 @@
     <ol id="videoList">
 
         <li class="title_bold">공인중개사 민법/민사특별법 핵심이론(2024)</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_01_pki_231023_sd.mp4?' + repeatedPart, this); return false;">1.민법 핵심이론01</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_02_pki_231023_sd.mp4?' + repeatedPart, this); return false;">2.민법 핵심이론02</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_03_pki_231023_sd.mp4?' + repeatedPart, this); return false;">3.민법 핵심이론03</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_04_pki_231023_sd.mp4?' + repeatedPart, this); return false;">4.민법 핵심이론04</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_05_pki_231023_sd.mp4?' + repeatedPart, this); return false;">5.민법 핵심이론05</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_06_pki_231102_sd.mp4?' + repeatedPart, this); return false;">6.민법 핵심이론06</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_07_pki_231102_sd.mp4?' + repeatedPart, this); return false;">7.민법 핵심이론07</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_08_pki_231102_sd.mp4?' + repeatedPart, this); return false;">8.민법 핵심이론08</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_09_pki_231102_sd.mp4?' + repeatedPart, this); return false;">9.민법 핵심이론09</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_10_pki_231102_sd.mp4?' + repeatedPart, this); return false;">10.민법 핵심이론10</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_11_pki_231102_sd.mp4?' + repeatedPart, this); return false;">11.민법 핵심이론11</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_12_pki_231106_sd.mp4?' + repeatedPart, this); return false;">12.민법 핵심이론12</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_13_pki_231106_sd.mp4?' + repeatedPart, this); return false;">13.민법 핵심이론13</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_14_pki_231106_sd.mp4?' + repeatedPart, this); return false;">14.민법 핵심이론14</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_15_pki_231106_sd.mp4?' + repeatedPart, this); return false;">15.민법 핵심이론15</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_16_pki_231106_sd.mp4?' + repeatedPart, this); return false;">16.민법 핵심이론16</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_17_pki_231106_sd.mp4?' + repeatedPart, this); return false;">17.민법 핵심이론17</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_18_pki_231123_sd.mp4?' + repeatedPart, this); return false;">18.민법 핵심이론18</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_19_pki_231123_sd.mp4?' + repeatedPart, this); return false;">19.민법 핵심이론19</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_20_pki_231123_sd.mp4?' + repeatedPart, this); return false;">20.민법 핵심이론20</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_21_pki_231123_sd.mp4?' + repeatedPart, this); return false;">21.민법 핵심이론21</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_22_pki_231123_sd.mp4?' + repeatedPart, this); return false;">22.민법 핵심이론22</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_01_pki_231023_sd.mp4? + repeatedPart', this); return false;">1. 민법 핵심이론01</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_02_pki_231023_sd.mp4? + repeatedPart', this); return false;">2. 민법 핵심이론02</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_03_pki_231023_sd.mp4? + repeatedPart', this); return false;">3. 민법 핵심이론03</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_04_pki_231023_sd.mp4? + repeatedPart', this); return false;">4. 민법 핵심이론04</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_05_pki_231023_sd.mp4? + repeatedPart', this); return false;">5. 민법 핵심이론05</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_06_pki_231102_sd.mp4? + repeatedPart', this); return false;">6. 민법 핵심이론06</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_07_pki_231102_sd.mp4? + repeatedPart', this); return false;">7. 민법 핵심이론07</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_08_pki_231102_sd.mp4? + repeatedPart', this); return false;">8. 민법 핵심이론08</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_09_pki_231102_sd.mp4? + repeatedPart', this); return false;">9. 민법 핵심이론09</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_10_pki_231102_sd.mp4? + repeatedPart', this); return false;">10. 민법 핵심이론10</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_11_pki_231102_sd.mp4? + repeatedPart', this); return false;">11. 민법 핵심이론11</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_12_pki_231106_sd.mp4? + repeatedPart', this); return false;">12. 민법 핵심이론12</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_13_pki_231106_sd.mp4? + repeatedPart', this); return false;">13. 민법 핵심이론13</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_14_pki_231106_sd.mp4? + repeatedPart', this); return false;">14. 민법 핵심이론14</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_15_pki_231106_sd.mp4? + repeatedPart', this); return false;">15. 민법 핵심이론15</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_16_pki_231106_sd.mp4? + repeatedPart', this); return false;">16. 민법 핵심이론16</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_17_pki_231106_sd.mp4? + repeatedPart', this); return false;">17. 민법 핵심이론17</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_18_pki_231123_sd.mp4? + repeatedPart', this); return false;">18. 민법 핵심이론18</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_19_pki_231123_sd.mp4? + repeatedPart', this); return false;">19. 민법 핵심이론19</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_20_pki_231123_sd.mp4? + repeatedPart', this); return false;">20. 민법 핵심이론20</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_21_pki_231123_sd.mp4? + repeatedPart', this); return false;">21. 민법 핵심이론21</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_22_pki_231123_sd.mp4? + repeatedPart', this); return false;">22. 민법 핵심이론22</li>
 
 
     </ol>
