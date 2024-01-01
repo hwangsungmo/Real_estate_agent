@@ -8,17 +8,15 @@
     <style>
         #videoList {
             overflow-y: auto;
-            max-height: 240px;
-            width: 480px;
-            /* Match the video width */
+            max-height: 320px;
+            width: 320px;
             list-style-type: none;
             padding: 0;
             margin: 0;
             counter-reset: videoCounter;
-            font-size: 13px;
-            /* Adjust the font size as needed */
+            font-size: 14px;
             margin-bottom: 20px;
-            /* Add margin between different video lists */
+            margin-left: 10px;
         }
 
         #videoList li {
@@ -28,16 +26,11 @@
         }
 
         #videoList li::before {
-            /*video count*/
-            /*content: counter(videoCounter);
-            counter-increment: videoCounter;*/
             display: inline-block;
             width: 20px;
-            /* Adjust the width as needed */
             text-align: right;
             margin-right: 5px;
             color: #555;
-            /* Adjust the color as needed */
         }
 
         #videoList li.selected {
@@ -46,186 +39,64 @@
 
         .title_bold {
             font-weight: bold;
-            width: auto;
+            text-align: center;
+            width: 320px;
             background-color: black;
             color: white;
             font-size: 15px;
-            /* Adjust the font size as needed */
-            margin-top: 20px;
             margin-bottom: 10px;
             margin-left: 0px;
-            padding-left: 10px;
         }
 
-        .title_bold1 {
-            font-weight: bold;
-            /*text-align: center;*/
-            width: 480px;
-            background-color: black;
-            color: white;
-            font-size: 15px;
-            /* Adjust the font size as needed */
-            margin-top: 20px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            padding-left: 10px;
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
         }
 
-        #mainVideo {
-            width: 320px;
-            height: 240px;
-        }
-
-        @media only screen and (min-width: 641px) {
-            /* For screens wider than 640px (PC) */
-            #videoList {
-                max-height: 300px;
-                width: 480px;
-            }
-
-            #mainVideo {
-                width: 480px;
-                height: 300px;
-            }
-
-            .title_bold1 {
-                width: 480px;
-            }
+        .video-list a {
+            color: inherit;
+            text-decoration: none;
         }
 
     </style>
 </head>
 
 <body>
-
-    <div class="title_bold1"> 공인중개사 부동산세법 핵심이론(2024) </div>
+    <div class="title_bold"> 공인중개사 부동산학개론 핵심이론(2024) </div>
 
     <video id="mainVideo" width="320" height="240" controls autoplay>
-        <source src="http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_01_lkm_231031_sd.mp4? + repeatedPart" type="video/mp4">
+        <source src="" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-
-    <!-- 공인중개사 부동산세법 핵심이론(2024) -->
-    <ol id="videoList">
-
-        <li class="title_bold">공인중개사 부동산세법 핵심이론(2024)</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_01_lkm_231031_sd.mp4? + repeatedPart', this); return false;">1. 세법 핵심이론 01</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_02_lkm_231031_sd.mp4? + repeatedPart', this); return false;">2. 세법 핵심이론 02</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_03_lkm_231031_sd.mp4? + repeatedPart', this); return false;">3. 세법 핵심이론 03</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_04_lkm_231031_sd.mp4? + repeatedPart', this); return false;">4. 세법 핵심이론 04</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_05_lkm_231031_sd.mp4? + repeatedPart', this); return false;">5. 세법 핵심이론 05</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_06_lkm_231108_sd.mp4? + repeatedPart', this); return false;">6. 세법 핵심이론 06</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_07_lkm_231108_sd.mp4? + repeatedPart', this); return false;">7. 세법 핵심이론 07</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_08_lkm_231108_sd.mp4? + repeatedPart', this); return false;">8. 세법 핵심이론 08</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_09_lkm_231108_sd.mp4? + repeatedPart', this); return false;">9. 세법 핵심이론 09</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_10_lkm_231108_sd.mp4? + repeatedPart', this); return false;">10. 세법 핵심이론 10</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_11_lkm_231108_sd.mp4? + repeatedPart', this); return false;">11. 세법 핵심이론 11</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_12_lkm_231108_sd.mp4? + repeatedPart', this); return false;">12. 세법 핵심이론 12</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_13_lkm_231108_sd.mp4? + repeatedPart', this); return false;">13. 세법 핵심이론 13</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_14_lkm_231108_sd.mp4? + repeatedPart', this); return false;">14. 세법 핵심이론 14</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_15_lkm_231108_sd.mp4? + repeatedPart', this); return false;">15. 세법 핵심이론 15</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_16_lkm_231114_sd.mp4? + repeatedPart', this); return false;">16. 세법 핵심이론 16</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_17_lkm_231114_sd.mp4? + repeatedPart', this); return false;">17. 세법 핵심이론 17</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_18_lkm_231114_sd.mp4? + repeatedPart', this); return false;">18. 세법 핵심이론 18</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_19_lkm_231114_sd.mp4? + repeatedPart', this); return false;">19. 세법 핵심이론 19</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_20_lkm_231114_sd.mp4? + repeatedPart', this); return false;">20. 세법 핵심이론 20</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_21_lkm_231114_sd.mp4? + repeatedPart', this); return false;">21. 세법 핵심이론 21</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_22_lkm_231114_sd.mp4? + repeatedPart', this); return false;">22. 세법 핵심이론 22</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_23_lkm_231114_sd.mp4? + repeatedPart', this); return false;">23. 세법 핵심이론 23</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_24_lkm_231114_sd.mp4? + repeatedPart', this); return false;">24. 세법 핵심이론 24</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_25_lkm_231114_sd.mp4? + repeatedPart', this); return false;">25. 세법 핵심이론 25</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_26_lkm_231114_sd.mp4? + repeatedPart', this); return false;">26. 세법 핵심이론 26</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_27_lkm_231121_sd.mp4? + repeatedPart', this); return false;">27. 세법 핵심이론 27</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_28_lkm_231121_sd.mp4? + repeatedPart', this); return false;">28. 세법 핵심이론 28</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_29_lkm_231121_sd.mp4? + repeatedPart', this); return false;">29. 세법 핵심이론 29</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_30_lkm_231121_sd.mp4? + repeatedPart', this); return false;">30. 세법 핵심이론 30</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_31_lkm_231121_sd.mp4? + repeatedPart', this); return false;">31. 세법 핵심이론 31</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_32_lkm_231121_sd.mp4? + repeatedPart', this); return false;">32. 세법 핵심이론 32</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_33_lkm_231121_sd.mp4? + repeatedPart', this); return false;">33. 세법 핵심이론 33</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_34_lkm_231121_sd.mp4? + repeatedPart', this); return false;">34. 세법 핵심이론 34</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_35_lkm_231123_sd.mp4? + repeatedPart', this); return false;">35. 세법 핵심이론 35</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_36_lkm_231121_sd.mp4? + repeatedPart', this); return false;">36. 세법 핵심이론 36</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_37_lkm_231128_sd.mp4? + repeatedPart', this); return false;">37. 세법 핵심이론 37</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_38_lkm_231128_sd.mp4? + repeatedPart', this); return false;">38. 세법 핵심이론 38</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_39_lkm_231128_sd.mp4? + repeatedPart', this); return false;">39. 세법 핵심이론 39</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_40_lkm_231128_sd.mp4? + repeatedPart', this); return false;">40. 세법 핵심이론 40</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_41_lkm_231128_sd.mp4? + repeatedPart', this); return false;">41. 세법 핵심이론 41</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_42_lkm_231128_sd.mp4? + repeatedPart', this); return false;">42. 세법 핵심이론 42</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_43_lkm_231128_sd.mp4? + repeatedPart', this); return false;">43. 세법 핵심이론 43</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_44_lkm_231128_sd.mp4? + repeatedPart', this); return false;">44. 세법 핵심이론 44</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_45_lkm_231128_sd.mp4? + repeatedPart', this); return false;">45. 세법 핵심이론 45</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_46_lkm_231128_sd.mp4? + repeatedPart', this); return false;">46. 세법 핵심이론 46</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_47_lkm_231205_sd.mp4? + repeatedPart', this); return false;">47. 세법 핵심이론 47</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_48_lkm_231205_sd.mp4? + repeatedPart', this); return false;">48. 세법 핵심이론 48</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_49_lkm_231205_sd.mp4? + repeatedPart', this); return false;">49. 세법 핵심이론 49</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_50_lkm_231205_sd.mp4? + repeatedPart', this); return false;">50. 세법 핵심이론 50</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_51_lkm_231205_sd.mp4? + repeatedPart', this); return false;">51. 세법 핵심이론 51</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_52_lkm_231205_sd.mp4? + repeatedPart', this); return false;">52. 세법 핵심이론 52</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_53_lkm_231206_sd.mp4? + repeatedPart', this); return false;">53. 세법 핵심이론 53</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_54_lkm_231206_sd.mp4? + repeatedPart', this); return false;">54. 세법 핵심이론 54</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_55_lkm_231206_sd.mp4? + repeatedPart', this); return false;">55. 세법 핵심이론 55</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_56_lkm_231206_sd.mp4? + repeatedPart', this); return false;">56. 세법 핵심이론 56</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/tax_57_lkm_2312**_sd.mp4? + repeatedPart', this); return false;">57. 세법 핵심이론 57</li>
-
-
-
+    <ol id="videoList" class="video-list">
+        <li><a href="http://zoneauth.vod.tomatopass.hscdn.com/realestate/int_01_sdy_231025_sd.mp4?' + repeatedPart, this; return false;">1. 부동산학개론 핵심이론 01</a></li>
+        <li><a href="http://zoneauth.vod.tomatopass.hscdn.com/realestate/int_02_sdy_231025_sd.mp4?' + repeatedPart, this; return false;">2. 부동산학개론 핵심이론 02</a></li>
+        <!-- Add more video list items as needed -->
     </ol>
 
-
     <script>
-        function playVideo(videoURL, listItem) {
-            var mainVideo = document.getElementById('mainVideo');
-            mainVideo.src = videoURL;
-            mainVideo.load();
-            mainVideo.play();
+        var repeatedPart = ''; // Add any additional parameters needed for the video URLs
 
-            // Remove 'selected' class from all list items
-            var listItems = document.querySelectorAll('#videoList li');
-            listItems.forEach(function (item) {
-                item.classList.remove('selected');
-            });
+        var videoList = document.getElementById('videoList');
+        var mainVideo = document.getElementById('mainVideo');
 
-            // Add 'selected' class to the clicked list item
-            listItem.classList.add('selected');
-        }
+        videoList.addEventListener('click', function (event) {
+            if (event.target.tagName === 'A') {
+                event.preventDefault();
+                var videoSource = event.target.getAttribute('href');
+                mainVideo.src = videoSource;
+                mainVideo.load();
+                mainVideo.play();
+                var selectedItems = document.querySelectorAll('#videoList li.selected');
+                for (var i = 0; i < selectedItems.length; i++) {
+                    selectedItems[i].classList.remove('selected');
+                }
+                event.target.parentNode.classList.add('selected');
+            }
+        });
     </script>
-
-    <script>
-        // Function to create and append links dynamically
-        function createLink(url) {
-        // Create a new link element
-        var linkElement = document.createElement('a');
-
-        // Set the href attribute with the provided URL
-        linkElement.href = url;
-
-        // Set link text or innerHTML as needed
-        linkElement.innerText = 'Link';
-
-        // Create a div to wrap the link for styling
-        var linkWrapper = document.createElement('div');
-        linkWrapper.appendChild(linkElement);
-
-        // Append the link to the container
-        document.getElementById('dynamicLinksContainer').appendChild(linkWrapper);
-        }
-
-        // Repeated part
-        var repeatedPart =
-        '%20%27SCDIAFC34788AC5E25ACDDDA3CE9F5B8E025C2D99D6C8779AB0CDE7CDFDFF9F801A7741EDA880110FF3AE24A8AFE2C5A7858B42F1BEDB3D517622194EE0BD91767E8D9AD39EA8FBF9D785ECAF3E3BFDF0F287A08499A2D10E6569E786E86D83418CDFBC3235B24CBC37A2F79D49852BB4B26E6A83A22E88AB0BBCA558D432768EEFF673EFDE0217D151105C84AE5FFF8A87C56';
-
-        // Example links with the repeated part
-        //var link1 = 'http://zoneauth.vod.tomatopass.hscdn.com/realestate/civil_01_pki_231023_sd.mp4?' + repeatedPart;
-        //var link2 = 'http://zoneauth.vod.tomatopass.hscdn.com/realestate/int_16_sdy_231108_sd.mp4?' + repeatedPart;
-        //var link3 = 'http://zoneauth.vod.tomatopass.hscdn.com/realestate/int_17_sdy_231108_sd.mp4?' + repeatedPart;
-
-        // Call the function to create links (you can call it with different links)
-        //createLink(link1);
-        //createLink(link2);
-        //createLink(link3);
-    </script>
-
 </body>
 
 </html>
