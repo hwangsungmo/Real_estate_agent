@@ -9,7 +9,7 @@
         #videoList {
             overflow-y: auto;
             max-height: 240px;
-            width: 320px;
+            width: 480px;
             /* Match the video width */
             list-style-type: none;
             padding: 0;
@@ -46,17 +46,62 @@
 
         .title_bold {
             font-weight: bold;
-            color: blue;
+            width: auto;
+            background-color: black;
+            color: white;
             font-size: 15px;
             /* Adjust the font size as needed */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            padding-left: 10px;
         }
+
+        .title_bold1 {
+            font-weight: bold;
+            /*text-align: center;*/
+            width: 480px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            /* Adjust the font size as needed */
+            margin-top: 20px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-left: 10px;
+        }
+
+        #mainVideo {
+            width: 320px;
+            height: 240px;
+        }
+
+        @media only screen and (min-width: 641px) {
+            /* For screens wider than 640px (PC) */
+            #videoList {
+                max-height: 300px;
+                width: 480px;
+            }
+
+            #mainVideo {
+                width: 480px;
+                height: 300px;
+            }
+
+            .title_bold1 {
+                width: 480px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
+    <div class="title_bold1"> 공인중개사 부동산공법 핵심이론(2024) </div>
+
     <video id="mainVideo" width="320" height="240" controls autoplay>
-        <source src="http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_OT_phs_231117_sd.mp4? + repeatedPart type="video/mp4">
+        <source src="http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_01_phs_231117_sd.mp4? + repeatedPart" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -65,36 +110,35 @@
     <ol id="videoList">
 
         <li class="title_bold">공인중개사 부동산공법 핵심이론(2024)</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_01_phs_231117_sd.mp4?' + repeatedPart, this); return false;">1.공법 핵심이론01</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_02_phs_231117_sd.mp4?' + repeatedPart, this); return false;">2.공법 핵심이론02</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_03_phs_231117_sd.mp4?' + repeatedPart, this); return false;">3.공법 핵심이론03</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_04_phs_231117_sd.mp4?' + repeatedPart, this); return false;">4.공법 핵심이론04</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_05_phs_231117_sd.mp4?' + repeatedPart, this); return false;">5.공법 핵심이론05</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_06_phs_231117_sd.mp4?' + repeatedPart, this); return false;">6.공법 핵심이론06</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_07_phs_231117_sd.mp4?' + repeatedPart, this); return false;">7.공법 핵심이론07</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_08_phs_231117_sd.mp4?' + repeatedPart, this); return false;">8.공법 핵심이론08</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_09_phs_231117_sd.mp4?' + repeatedPart, this); return false;">9.공법 핵심이론09</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_10_phs_231208_sd.mp4?' + repeatedPart, this); return false;">10.공법 핵심이론10</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_11_phs_231208_sd.mp4?' + repeatedPart, this); return false;">11.공법 핵심이론11</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_12_phs_231208_sd.mp4?' + repeatedPart, this); return false;">12.공법 핵심이론12</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_13_phs_231208_sd.mp4?' + repeatedPart, this); return false;">13.공법 핵심이론13</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_14_phs_231208_sd.mp4?' + repeatedPart, this); return false;">14.공법 핵심이론14</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_15_phs_231208_sd.mp4?' + repeatedPart, this); return false;">15.공법 핵심이론15</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_16_phs_231208_sd.mp4?' + repeatedPart, this); return false;">16.공법 핵심이론16</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_17_phs_231208_sd.mp4?' + repeatedPart, this); return false;">17.공법 핵심이론17</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_18_phs_231208_sd.mp4?' + repeatedPart, this); return false;">18.공법 핵심이론18</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_19_phs_231215_sd.mp4?' + repeatedPart, this); return false;">19.공법 핵심이론19</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_20_phs_231215_sd.mp4?' + repeatedPart, this); return false;">20.공법 핵심이론20</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_21_phs_231215_sd.mp4?' + repeatedPart, this); return false;">21.공법 핵심이론21</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_22_phs_231215_sd.mp4?' + repeatedPart, this); return false;">22.공법 핵심이론22</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_23_phs_231215_sd.mp4?' + repeatedPart, this); return false;">23.공법 핵심이론23</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_24_phs_231215_sd.mp4?' + repeatedPart, this); return false;">24.공법 핵심이론24</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_25_phs_231215_sd.mp4?' + repeatedPart, this); return false;">25.공법 핵심이론25</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_26_phs_231215_sd.mp4?' + repeatedPart, this); return false;">26.공법 핵심이론26</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_27_phs_231215_sd.mp4?' + repeatedPart, this); return false;">27.공법 핵심이론27</li>
-        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_28_phs_2312**_sd.mp4?' + repeatedPart, this); return false;">28.공법 핵심이론28</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_01_phs_231117_sd.mp4? + repeatedPart', this); return false;">1. 공법 핵심이론01</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_02_phs_231117_sd.mp4? + repeatedPart', this); return false;">2. 공법 핵심이론02</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_03_phs_231117_sd.mp4? + repeatedPart', this); return false;">3. 공법 핵심이론03</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_04_phs_231117_sd.mp4? + repeatedPart', this); return false;">4. 공법 핵심이론04</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_05_phs_231117_sd.mp4? + repeatedPart', this); return false;">5. 공법 핵심이론05</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_06_phs_231117_sd.mp4? + repeatedPart', this); return false;">6. 공법 핵심이론06</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_07_phs_231117_sd.mp4? + repeatedPart', this); return false;">7. 공법 핵심이론07</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_08_phs_231117_sd.mp4? + repeatedPart', this); return false;">8. 공법 핵심이론08</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_09_phs_231117_sd.mp4? + repeatedPart', this); return false;">9. 공법 핵심이론09</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_10_phs_231208_sd.mp4? + repeatedPart', this); return false;">10. 공법 핵심이론10</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_11_phs_231208_sd.mp4? + repeatedPart', this); return false;">11. 공법 핵심이론11</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_12_phs_231208_sd.mp4? + repeatedPart', this); return false;">12. 공법 핵심이론12</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_13_phs_231208_sd.mp4? + repeatedPart', this); return false;">13. 공법 핵심이론13</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_14_phs_231208_sd.mp4? + repeatedPart', this); return false;">14. 공법 핵심이론14</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_15_phs_231208_sd.mp4? + repeatedPart', this); return false;">15. 공법 핵심이론15</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_16_phs_231208_sd.mp4? + repeatedPart', this); return false;">16. 공법 핵심이론16</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_17_phs_231208_sd.mp4? + repeatedPart', this); return false;">17. 공법 핵심이론17</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_18_phs_231208_sd.mp4? + repeatedPart', this); return false;">18. 공법 핵심이론18</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_19_phs_231215_sd.mp4? + repeatedPart', this); return false;">19. 공법 핵심이론19</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_20_phs_231215_sd.mp4? + repeatedPart', this); return false;">20. 공법 핵심이론20</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_21_phs_231215_sd.mp4? + repeatedPart', this); return false;">21. 공법 핵심이론21</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_22_phs_231215_sd.mp4? + repeatedPart', this); return false;">22. 공법 핵심이론22</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_23_phs_231215_sd.mp4? + repeatedPart', this); return false;">23. 공법 핵심이론23</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_24_phs_231215_sd.mp4? + repeatedPart', this); return false;">24. 공법 핵심이론24</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_25_phs_231215_sd.mp4? + repeatedPart', this); return false;">25. 공법 핵심이론25</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_26_phs_231215_sd.mp4? + repeatedPart', this); return false;">26. 공법 핵심이론26</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_27_phs_231215_sd.mp4? + repeatedPart', this); return false;">27. 공법 핵심이론27</li>
+        <li onclick="playVideo('http://zoneauth.vod.tomatopass.hscdn.com/realestate/public_28_phs_2312**_sd.mp4? + repeatedPart', this); return false;">28. 공법 핵심이론28</li>
         
-
     </ol>
 
 
